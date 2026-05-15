@@ -35,7 +35,10 @@ makeRant("if you have to cough, please cover your mouth", document.body);
 
 // Example 3 -  JS is Single Threaded
 console.log("\nSECTION 3 - JS is Single Threaded");
-// No Code
+
+console.log("I am First to run!");
+alert("Hi dood!");
+console.log("I am Second to run!");
 
 // Example 4 -  How Asynchronous Callbacks Actually Work
 console.log("\nSECTION 4 - How Asynchronous Callbacks Actually Work");
