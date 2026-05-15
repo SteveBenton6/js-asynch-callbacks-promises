@@ -49,9 +49,25 @@ setTimeout(function () {
 }, 5000);
 console.log("I am Second to run!");
 
-// Example 5 -  The Document Object
-console.log("\nSECTION 5 - The Document Object");
-// No Code
+// Example 5 -  Welcome to Callback Hell
+console.log("\nSECTION 5 - Welcome to Callback Hell");
+
+const btn = document.querySelector("button");
+setTimeout(() => {
+  btn.style.transform = `translateX(100px)`;
+  setTimeout(() => {
+    btn.style.transform = `translateX(200px)`;
+    setTimeout(() => {
+      btn.style.transform = `translateX(300px)`;
+      setTimeout(() => {
+        btn.style.transform = `translateX(400px)`;
+        setTimeout(() => {
+          btn.style.transform = `translateX(500px)`;
+        }, 2000);
+      }, 2000);
+    }, 2000);
+  }, 2000);
+}, 2000);
 
 // Example 6 -  getElementById
 console.log("\nSECTION 6 - getElementById");
