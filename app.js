@@ -42,7 +42,12 @@ console.log("I am Second to run!");
 
 // Example 4 -  How Asynchronous Callbacks Actually Work
 console.log("\nSECTION 4 - How Asynchronous Callbacks Actually Work");
-// No Code
+
+console.log("I am First to run!");
+setTimeout(function () {
+  console.log("I am Third to run!");
+}, 5000);
+console.log("I am Second to run!");
 
 // Example 5 -  The Document Object
 console.log("\nSECTION 5 - The Document Object");
