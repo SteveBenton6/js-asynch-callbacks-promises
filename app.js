@@ -49,6 +49,16 @@ setTimeout(function () {
 }, 5000);
 console.log("I am Second to run!");
 
+const secondLog = () => {
+  console.log("I am 3rd to Log");
+};
+console.log("I am 1st to Log");
+setTimeout(secondLog, 3000);
+console.log("I am 2nd to Log");
+
+const namesCb = ["tanya", "kartel", "Elissia", "Charmaine"];
+namesCb.forEach((name) => console.log(name));
+
 // Example 5 -  Welcome to Callback Hell
 console.log("\nSECTION 5 - Welcome to Callback Hell");
 
@@ -69,8 +79,8 @@ setTimeout(() => {
   }, 2000);
 }, 2000);
 
-// Example 6 -  getElementById
-console.log("\nSECTION 6 - getElementById");
+// Example 6 -  Introducing Promises!
+console.log("\nSECTION 6 - Introducing Promises!");
 
 // Example 7 -  getElementsByTagName
 console.log("\nSECTION 7 - getElementsByTagName");
